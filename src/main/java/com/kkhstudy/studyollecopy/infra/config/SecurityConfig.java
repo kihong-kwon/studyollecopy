@@ -1,8 +1,7 @@
-package com.kkhstudy.studyollecopy.config;
+package com.kkhstudy.studyollecopy.infra.config;
 
 import com.kkhstudy.studyollecopy.account.AccountService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.boot.autoconfigure.security.StaticResourceLocation;
 import org.springframework.boot.autoconfigure.security.servlet.PathRequest;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -15,9 +14,6 @@ import org.springframework.security.web.authentication.rememberme.JdbcTokenRepos
 import org.springframework.security.web.authentication.rememberme.PersistentTokenRepository;
 
 import javax.sql.DataSource;
-import java.util.Collection;
-import java.util.Iterator;
-import java.util.Set;
 
 @Configuration
 @EnableWebSecurity

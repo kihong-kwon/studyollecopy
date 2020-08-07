@@ -10,5 +10,5 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.PARAMETER)
 @AuthenticationPrincipal(expression = "#this == 'anonymousUser' ? null : account") // account의 이름은 UserAccount객체의 account속성과 동일해야 한다.
-public @interface CurrentUser {
+public @interface CurrentAccount {
 }
